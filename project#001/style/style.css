@@ -1,3 +1,16 @@
+:root {
+  --background-color-accent-1: #1e2b3e;
+  --background-color-accent-2: #121a26;
+  --b-font: 5rem;
+  --h2-font: 3rem;
+  --p-font: 1rem;
+  --fontcolor: #fff;
+  --fontcolor-2: #ccc;
+  --accent-1: #ccc;
+  --accent-2: #7140bf;
+  --accent-3: #ff0000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,18 +18,21 @@
 }
 body {
   display: flex;
+
+  justify-content: center;
   align-items: center;
-  align-content: center;
+
   height: 100vh;
-  font-size: 20px;
+  font-size: 1.4rem;
   font-family: "Ubuntu", sans-serif;
-  background-color: blueviolet;
+  background-color: var(--background-color-accent-2);
+  color: var(--fontcolor);
 }
 .hero {
   width: 800px;
   padding: 20px 40px;
-  background-color: rgba(157, 48, 48, 0.8);
-  border: 2px solid white;
+  background-color: var(--background-color-accent-1);
+  border: 4px solid var(--fontcolor);
   border-radius: 25px;
 }
 .title-project {
@@ -35,23 +51,23 @@ body {
   padding: 10px;
 }
 .container-info-top input {
-  font-size: 16px;
+  font-size: 1.1rem;
   padding: 5px 10px;
   margin-top: 10px;
   background: none;
   border: none;
-  color: #fff;
-  border-bottom: 2px solid #ddd;
+  color: var(--fontcolor);
+  border-bottom: 2px solid var(--fontcolor);
 }
 
 .container-info-top input::placeholder {
-  color: #ddd;
+  color: var(--fontcolor-2);
 }
 
 .container-info-top button {
   padding: 10px;
   margin-left: 20px;
-  color: #fff;
+  color: var(--fontcolor);
   font-weight: bold;
   background: none;
   border-radius: 5px;
@@ -61,8 +77,8 @@ body {
 }
 
 .container-info-top button:hover {
-  color: #333;
-  background-color: #ddd;
+  color: var(--background-color-accent-1);
+  background-color: var(--fontcolor);
 }
 
 .container-info-bottom {
@@ -89,8 +105,8 @@ body {
   height: 35%;
   text-transform: uppercase;
   font-weight: bold;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 3px solid var(--fontcolor);
+  border-bottom: 3px solid var(--fontcolor);
 }
 
 .weather-info {
@@ -106,6 +122,6 @@ body {
 
 .warning {
   margin-top: 10px;
-  font-size: 14px;
-  color: tomato;
+  font-size: 17px;
+  color: var(--accent-3);
 }
