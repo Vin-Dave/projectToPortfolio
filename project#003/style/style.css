@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background-color-accent-1: #1e2b3e;
+  --background-color-accent-2: #121a26;
+  --fontcolor: #fff;
+  --fontcolor-2: #ccc;
+  --accent-1: #ccc;
+  --accent-2: #7140bf;
+  --accent-3: #ff0000;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 120px;
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--background-color-accent-1);
+}
+
+input,
+select {
+  font-size: 22px;
+}
+
+.user-list {
+  background-color: #eee;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.user {
+  flex-basis: 30%;
+  display: flex;
+}
+
+.user__image {
+  order: -1;
+  padding: 20px;
+}
+
+.user__name {
+  align-self: center;
+}
