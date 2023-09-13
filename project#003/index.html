@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script
+      src="https://kit.fontawesome.com/d5fb48cba2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>ToDo List</title>
+  </head>
+
+  <body>
+    <form class="generator">
+      <label class="generator__input-name"
+        >Wybierz płeć:
+        <select class="generator__select" name="gender">
+          <option value="both" selected>Wszyscy</option>
+          <option value="female">Kobiety</option>
+          <option value="male">Męzczyźni</option>
+        </select>
+      </label>
+      <label class="generator__input-name"
+        >Liczba osób:
+        <input
+          class="generator__input"
+          name="users-number"
+          type="number"
+          value="10"
+        />
+      </label>
+      <input type="submit" class="button" value="Pobierz użytkowników" />
+    </form>
+    <div class="user-list"></div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
